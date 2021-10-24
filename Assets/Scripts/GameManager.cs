@@ -11,10 +11,9 @@ public class GameManager : MonoBehaviour
         {
             if (MovingObj.CurrentObj != null)
             {
-                print("stop");
                 MovingObj.CurrentObj.Stop();
             }
-            //FindObjectOfType<ObjSpawner>().spawnObj();
+            FindObjectOfType<ObjSpawner>().spawnObj();
         }
     }
 }
